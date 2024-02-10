@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class IntroScreen3 extends StatelessWidget {
   const IntroScreen3({super.key});
@@ -22,7 +23,10 @@ class IntroScreen3 extends StatelessWidget {
                           bottomRight: Radius.circular(50))),
                   child: Column(
                     children: [
-                      Expanded(child: Image.asset("assets/images/lmk.png"))
+                      Expanded(
+                        child: Lottie.network(
+                            'https://lottie.host/d633e7f3-000a-4245-9ab1-58e26d624595/dmfMboZmAR.lottie'),
+                      ),
                     ],
                   ),
                 )),
