@@ -24,8 +24,7 @@ class IntroScreen3 extends StatelessWidget {
                   child: Column(
                     children: [
                       Expanded(
-                        child: Lottie.network(
-                            'https://lottie.host/d633e7f3-000a-4245-9ab1-58e26d624595/dmfMboZmAR.lottie'),
+                        child: Image.asset("assets/images/grit.png"),
                       ),
                     ],
                   ),

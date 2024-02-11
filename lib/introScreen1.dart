@@ -23,7 +23,7 @@ class IntroScreen1 extends StatelessWidget {
                           bottomRight: Radius.circular(50))),
                   child: Column(
                     children: [
-                      Expanded(child: Image.asset("assets/images/abc.png"))
+                      Expanded(child: Image.asset("assets/images/gritty.png")),
                     ],
                   ),
                 )),
