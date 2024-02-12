@@ -10,7 +10,6 @@ dependencies:
   flutter:
     sdk: flutter
   smooth_page_indicator: ^1.1.0
-  lottie: ^3.0.0
   get: ^4.6.5
   google_fonts: ^3.0.1
   lottie: ^1.4.2
