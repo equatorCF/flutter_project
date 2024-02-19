@@ -48,7 +48,7 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                       _controller.jumpToPage(2);
                     },
                     child: Text(
-                      'skip',
+                      'Skip',
                       style:
                           TextStyle(fontSize: 12, fontWeight: FontWeight.w100),
                     )),

@@ -29,8 +29,8 @@ class IntroScreen2 extends StatelessWidget {
                 flex: 2,
                 child: Container(
                   width: double.infinity,
-                  decoration: const BoxDecoration(
-                    color: Color(0xff4254f5),
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade400,
                     borderRadius:
                         BorderRadius.only(topLeft: Radius.circular(50)),
                   ),
