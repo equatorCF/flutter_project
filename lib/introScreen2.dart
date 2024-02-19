@@ -30,7 +30,7 @@ class IntroScreen2 extends StatelessWidget {
                 child: Container(
                   width: double.infinity,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 65, 140, 201),
+                    color: Color(0xff4254f5),
                     borderRadius:
                         BorderRadius.only(topLeft: Radius.circular(50)),
                   ),
