@@ -280,10 +280,10 @@ class _SignUpViewState extends State<SignUpView> {
   Widget signUpButton(ThemeData theme) {
     return SizedBox(
       width: double.infinity,
-      height: 55,
+      height: 46,
       child: ElevatedButton(
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.deepPurpleAccent),
+          backgroundColor: MaterialStateProperty.all(Colors.blue.shade400),
           shape: MaterialStateProperty.all(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),

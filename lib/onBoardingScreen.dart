@@ -33,7 +33,7 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
             });
           },
           children: [
-            IntroScreen1(),
+            IntroScreen1(), // Fixed the error here
             IntroScreen2(),
             IntroScreen3(),
           ],
@@ -86,7 +86,9 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                         child: Text(
                           'Next',
                           style: TextStyle(
-                              fontSize: 12, fontWeight: FontWeight.w100),
+                            fontSize: 12,
+                            fontWeight: FontWeight.w100,
+                          ),
                         ),
                       )
               ],
