@@ -59,6 +59,12 @@ android {
         }
     }
 }
+android {
+    defaultConfig{
+        multiDexEnabled true
+     }
+}
+
 
 flutter {
     source '../..'
