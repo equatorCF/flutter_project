@@ -2,7 +2,6 @@
 // ignore_for_file: unused_import, camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, non_constant_identifier_names, library_private_types_in_public_api, file_names
 
 import 'package:flutter/material.dart';
-import 'package:hello_world/homePage.dart';
 import 'package:hello_world/introScreen1.dart';
 import 'package:hello_world/introScreen2.dart';
 import 'package:hello_world/introScreen3.dart';
@@ -69,7 +68,7 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomePage()));
+                                  builder: (context) => HomeScreen()));
                         },
                         child: Text('Done',
                             style: TextStyle(
