@@ -1,9 +1,13 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
-import 'package:flutter_fire_base_register/auth/database.dart';
-import 'package:flutter_fire_base_register/models/user_model.dart';
+import 'package:hello_world/auth/database.dart';
+import 'package:hello_world/models/user_model.dart';
 import 'package:provider/provider.dart';
 
 class SettingForm extends StatefulWidget {
+  const SettingForm({super.key});
+
   @override
   _SettingFormState createState() => _SettingFormState();
 }
@@ -35,8 +39,8 @@ class _SettingFormState extends State<SettingForm> {
                     key: _formKey,
                     child: Column(
                       children: [
-                        Text('Update your settings'),
-                        SizedBox(height: 20.0),
+                        const Text('Update your settings'),
+                        const SizedBox(height: 20.0),
                         TextFormField(
                           initialValue: userdata.name,
                           decoration: InputDecoration(
@@ -44,7 +48,7 @@ class _SettingFormState extends State<SettingForm> {
                               borderRadius: BorderRadius.circular(5.0),
                             ),
                             labelText: 'Name',
-                            prefixIcon: Icon(
+                            prefixIcon: const Icon(
                               Icons.person,
                               color: Colors.black,
                             ),
@@ -54,7 +58,7 @@ class _SettingFormState extends State<SettingForm> {
                           onChanged: (val) =>
                               setState(() => _currentName = val),
                         ),
-                        SizedBox(height: 20.0),
+                        const SizedBox(height: 20.0),
                         DropdownButtonFormField(
                           value: _currentSugar ?? userdata.sugars,
                           onChanged: (value) => setState(
@@ -94,7 +98,7 @@ class _SettingFormState extends State<SettingForm> {
                               Navigator.pop(context);
                             }
                           },
-                          child: Text('Update'),
+                          child: const Text('Update'),
                           color: Colors.red,
                           textColor: Colors.white,
                         )
@@ -102,7 +106,7 @@ class _SettingFormState extends State<SettingForm> {
                     ),
                   );
                 } else {
-                  return CircularProgressIndicator();
+                  return const CircularProgressIndicator();
                 }
               }),
         ),

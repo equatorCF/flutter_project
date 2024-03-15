@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/introScreen1.dart';
 import 'package:hello_world/introScreen2.dart';
 import 'package:hello_world/introScreen3.dart';
+import 'package:hello_world/screens/home_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class onBoardingScreen extends StatefulWidget {

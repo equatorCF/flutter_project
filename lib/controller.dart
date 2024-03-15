@@ -1,6 +1,8 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
-import 'package:flutter_fire_base_register/models/user_model.dart';
-import 'package:flutter_fire_base_register/screens/screen.dart';
+import 'package:hello_world/models/user_model.dart';
+import 'package:hello_world/screens/screen.dart';
 import 'package:provider/provider.dart';
 
 class Controller extends StatelessWidget {

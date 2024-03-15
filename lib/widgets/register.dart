@@ -1,10 +1,12 @@
+// ignore_for_file: library_private_types_in_public_api, unused_local_variable
+
 import 'package:flutter/material.dart';
-import 'package:flutter_fire_base_register/auth/auth.dart';
-import 'package:flutter_fire_base_register/screens/screen.dart';
-import 'package:flutter_fire_base_register/widgets/widget.dart';
+import 'package:hello_world/auth/auth.dart';
+import 'package:hello_world/screens/screen.dart';
+import 'package:hello_world/widgets/widget.dart';
 
 class Register extends StatefulWidget {
-  Register({
+  const Register({
     Key? key,
     required this.formKeys,
     required this.textControllers,
@@ -20,7 +22,7 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
-  AuthSerives _serives = AuthSerives();
+  final AuthSerives _serives = AuthSerives();
 
   String? mail;
 
@@ -48,10 +50,10 @@ class _RegisterState extends State<Register> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Firabe register'),
+        title: const Text('Firabe register'),
         leading: IconButton(
           onPressed: () => back(context),
-          icon: Icon(Icons.arrow_back_ios),
+          icon: const Icon(Icons.arrow_back_ios),
           color: Colors.white,
         ),
       ),
@@ -77,7 +79,7 @@ class _RegisterState extends State<Register> {
                 'password',
               ],
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             SizedBox(
               width: size.width * .8,
               child: MaterialButton(
@@ -85,7 +87,7 @@ class _RegisterState extends State<Register> {
                     borderRadius: BorderRadius.circular(5.0)),
                 color: Colors.blue,
                 textColor: Colors.white,
-                child: Text('Register'),
+                child: const Text('Register'),
                 onPressed: () => logIn(context),
               ),
             ),
